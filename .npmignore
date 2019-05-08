@@ -1,0 +1,5 @@
+.nyc_output
+src
+test
+.eslintignore
+.eslintrc.js
