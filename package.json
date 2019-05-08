@@ -1,6 +1,6 @@
 {
   "name": "all-purpose-migrations",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "universal migrations library",
   "main": "dist/index.js",
   "author": "Komarov Danil <komarov.fl@yandex.ru>",
