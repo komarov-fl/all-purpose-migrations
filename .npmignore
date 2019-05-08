@@ -3,3 +3,4 @@ src
 test
 .eslintignore
 .eslintrc.js
+tsconfig.json

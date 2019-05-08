@@ -141,6 +141,9 @@ export class APM {
   }
 
   public async createMigrationFile(name: string): Promise<string> {
+    if (!name) {
+      throw new Error('Name is empty');
+    }
     const adapterConfig = this.adapter.getConfig();
     const template = this.adapter.getMigrationFileTemplate(name);
     const filePath = path.join(adapterConfig.migrationsPath, `${+new Date()}_${name}.${adapterConfig.ext}`);
@@ -157,6 +160,9 @@ export class APM {
   }
 
   public async createSeedFile(name: string): Promise<string> {
+    if (!name) {
+      throw new Error('Name is empty');
+    }
     const adapterConfig = this.adapter.getConfig();
     const template = this.adapter.getSeedFileTemplate(name);
     const filePath = path.join(adapterConfig.seedsPath, `${+new Date()}_${name}.${adapterConfig.ext}`);

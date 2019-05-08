@@ -15,6 +15,9 @@
     "coverage": "nyc npm run test",
     "prepublish": "npm run test && npm run build"
   },
+  "bin": {
+    "apm": "bin/apm.js"
+  },
   "devDependencies": {
     "@types/node": "^11.13.8",
     "@types/require-dir": "^1.0.0",
@@ -28,6 +31,7 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
+    "argparse": "^1.0.10",
     "require-dir": "^1.2.0"
   }
 }
